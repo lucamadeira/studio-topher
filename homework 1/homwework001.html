@@ -1,74 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>homepage</title>
+  <meta charset="UTF-8">
+  <title>Centro pagina</title>
+
     <style>
-        body{
-           
+      
+        body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        background-color: #f0f0f0;
+        font-family: sans-serif;
         }
-        h1{ text-align: center;}
-
-        div {
-    display: inline-block;
-    padding: 10px;
-    margin: 10px;
-    width: 300px;
-    
-    border: 1px solid black;
-    vertical-align: top;
-    box-sizing: border-box; 
-    overflow: hidden;        
-}
-
         
-   
-div img {
-      width: 100%;
-      max-height: 120px;
-      object-fit: cover;
-      display: block;
-      margin-bottom: 10px;
-    }
+        header h1 {
+        margin-bottom: 20px;
+        text-align: center;
+        }
 
-    div p {
-      font-size: 14px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      height: 150px;
-    }
-                
+        main {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
 
-    </style>
+        .box {
+        display: inline-block;
+        padding: 10px;
+        width: 300px;
+        border: 1px solid black;
+        box-sizing: border-box; 
+        text-align: center;
+        background-color: white;
+        box-shadow: 2px 2px 2px;
+        }
 
+        .box img {
+        width: 280px;
+        height: 200px;
+        object-fit: cover;
+      }
+       div{
+        background-color: #fff;
+        box-shadow: 2px 2px 2px;
+       }
+        .q1{
+            
+            border: 1px solid black;
+            width:600px;
+            height: 400px;
+            padding: 10px;
+        }
+
+        .q2,.q3{
+            border: 1px solid black;
+            width: 280px;
+            height: 250px;
+            object-fit: cover;
+            padding: 10px;
+            text-align: center;
+
+        }
+        ul {
+            column-count: 3;
+            column-gap: 2em;
+            padding-left: 1em;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+
+        a{
+            color: black;
+            border: 1px solid rgb(61, 71, 163);
+            border-radius: 10pc;
+            padding: 10px;
+            
+            
+        }
+
+  </style>
+  
 </head>
 <body>
     <header>
-        <h1>homepage</h1>
+        <h1>Homepage</h1>
     </header>
-    <main>
-       
-       <div>
-        <img src="imgine/pexels-ahmetkeremburak-30565210.jpg" alt="natura">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi optio neque beatae est, vitae ex tempora nisi quo ab ducimus rem et recusandae quae aspernatur cupiditate! Ea, dolorum! Similique, vel!</p>
-    </div>
+  <main>
+      <div class="box">
+       <img src="imgine/pexels-patt-garciia-65592693-30403731.jpg" alt="">
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati itaque ullam quidem esse modi, aspernatur veritatis adipisci, accusamus quibusdam mollitia quia praesentium exercitationem quasi fugiat maxime iusto?</p>
+      </div>
+        <div class="box"><img src="imgine/pexels-ahmetkeremburak-30565210.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nulla libero distinctio mollitia quibusdam temporibus corrupti veniam. Error, fugit ut. Fugit ipsum quis nisi iusto eaque veniam voluptatem perferendis fuga.</p>
+        </div>
+        <div class="box"><img src="imgine/pexels-javaistan-12636165.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio omnis exercitationem quos similique eligendi impedit saepe beatae inventore, ipsum enim unde aut voluptatibus delectus  aliquam voluptatum reiciendis.</p>
+        </div>
+        <div class="q1">
+            <h2>Services</h2>
+        <p>
+            Dolor eum accusamus distinctio cumque quidem sit nam accusamus. Aut id harum fugiat ex.
+            Ut perferendis non libero. Voluptatum ab in iusto dolorem maiores. Et molestiae distinctio
+            officiis et in ut.
+        </p>
+        <ul>
+            <li>🚀 Boost Your Growth</li>
+            <li>📈 Data-Driven Insights</li>
+            <li>🛒 Seamless E-commerce</li>
+            <li>🎨 Creative Design</li>
+            <li>🌐 Global Market Access</li>
+            <li>📝 Tailored Strategy</li>
+            <li>💼 Professional Advice</li>
+            <li>💬 24/7 Customer Service</li>
+            <li>🌟 Premium Service</li>
+            <li>🛠️ Reliable Support</li>
+            <li>📚 Learning Resources</li>
+            <li>👨‍💻 Custom Development</li>
+        </ul>
+           
+        </div>
+        <div class="q2">
+            <p>
+                <h2>Lorem</h2>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, necessitatibus ut perferendis quibusdam rerum dicta quisquam quasi sapiente esse dignissimos numquam tempora. Fugiat impedit saepe quia maxime tenetur possimus ducimus.</p> <p><a href="#">Log in</a></p>
+        </div>
+        <div class="q3">
+            <h2>Lorem</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ipsum sequi maxime expedita omnis a nihil minima non animi neque, explicabo dolore soluta at eius pariatur beatae necessitatibus. Dolor, iure.
+            <p><a href="#">Log in</a></p>
+        </div>
+  </main>
 
-       <div><img src="imgine/pexels-javaistan-12636165.jpg" alt="natura">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa necessitatibus maiores eos ipsa dolorum magni in blanditiis! Aut consequuntur quaerat expedita adipisci accusantium exercitationem ex quibusdam in aliquam! Perspiciatis, ipsa!</p>
-    </div>
-
-       <div><img src="imgine/pexels-patt-garciia-65592693-30403731.jpg" alt="natura">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia dolorem officiis obcaecati itaque earum repellat tenetur velit, temporibus quam distinctio excepturi repellendus sint natus totam deserunt tempora quia eveniet sapiente.</p></div>
-
-    </main>
-    <footer>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-    </footer>
-    
 </body>
 </html>
